@@ -13,8 +13,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <h1>Next 13 Template</h1>
-
+        <h1>Root Layout</h1>
         {children}
       </body>
     </html>
