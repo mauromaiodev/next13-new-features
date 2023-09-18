@@ -7,7 +7,8 @@ export async function User() {
   const response = await fetch("https://api.github.com/users/mauromaiodev", {
     next: {
       revalidate: 60
-    }
+    },
+    cache: "no-store"
   });
   const user = await response.json();
 
