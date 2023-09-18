@@ -1,6 +1,7 @@
 import { cookies, headers } from "next/headers";
 
 export async function User() {
+  await new Promise((resolve) => setTimeout(resolve, 2000));
   const userCookies = cookies();
   const userHeaders = headers();
 
