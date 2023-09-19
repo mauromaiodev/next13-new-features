@@ -3,9 +3,6 @@ export async function Repos() {
   const response = await fetch(
     "https://api.github.com/users/mauromaiodev/repos",
     {
-      next: {
-        revalidate: 60
-      },
       cache: "no-store"
     }
   );
